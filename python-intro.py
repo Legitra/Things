@@ -2,6 +2,7 @@
 
 def helloworld():
     print("Hello, World!")
+    return
     
 #ifelse#                    #--------------------------------------------#
     
@@ -15,6 +16,7 @@ def ifelse(n):
         print("Weird")
     if (20 < n) and (n % 2 == 0):
         print("Not Weird")
+    return
     
 #arithmetic operators#      #--------------------------------------------#
         
@@ -25,8 +27,27 @@ def arithops(a,b):
     print(a + b)            #sum of A and B
     print(a - b)            #difference of A and B
     print(a * b)            #product of A and B
+    return
     
-#challenge 4#               #--------------------------------------------#
-#challenge 5#               #--------------------------------------------#
+#division#                  #--------------------------------------------#
+
+def division(a,b):
+    a = int(input())
+    b = int(input())
+    
+    print(a // b)           #integer division
+    print(a /  b)           #float division
+    return
+    
+#loops#                     #--------------------------------------------#
+
+def loops(n):
+    n = int(input())
+    
+    for x in range (0,n):   #for every number (x) from 0 to n
+        print(x ** 2)       #print the square of x
+
+    return
+
 #challenge 6#               #--------------------------------------------#
 #challenge 7#               #--------------------------------------------#
