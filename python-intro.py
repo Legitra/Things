@@ -49,5 +49,25 @@ def loops(n):
 
     return
 
-#challenge 6#               #--------------------------------------------#
+#write a function#          #--------------------------------------------#
+def is_leap(year):
+'''
+Takes input 'year' as integer.
+Function returns bool;
+    True if input is leap year,
+    False if not leap year
+'''
+    if (year % 4 == 0):             #if year is divisable by 4;
+        if (year % 100 == 0):       #   and also divisible by 100;
+            if (year % 400 == 0):   #       and also 400;
+                return True         #           it is a leap year
+            else:
+                return False        #not divisable by 400 therefore not leap year
+        else:
+             return True            #divisabke by 4 but not 100 is a leap year
+
+    return False                    #not divisable by 4
+
+year = int(input())
+print(is_leap(year))
 #challenge 7#               #--------------------------------------------#
